@@ -8,6 +8,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/ie7.css" />
@@ -89,7 +90,149 @@
 
 <!--content开始-->
 <div class="content">
+    <!-- 首页banner -->
+    <div class="index-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/index-banner.jpg" >
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/index-banner.jpg" >
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/index-banner.jpg" >
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
 
+        <img src="./images/zi.png" class="zi">
+
+        <div class="search-box">
+            <div class="query">
+                <input type="text" placeholder="请输入货物单号用于查询">
+                <p>
+                    <img src="./images/search.png" >
+                    <span>立即查询</span>
+                </p>
+            </div>
+            <ul class="nav-list clearfix">
+                <li>
+                    <a href="#">
+                        <h2>关于我们</h2>
+                        <p>About us</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img-01.png" >
+                        <span>集装箱中心站</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img-02.jpg" >
+                        <span>集装箱中心站</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img-03.jpg" >
+                        <span>集装箱中心站</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 园区新闻 -->
+    <div class="news">
+        <div class="index-title">
+            <h2><em>园区</em>新闻</h2>
+            <p>news</p>
+        </div>
+
+        <div class="box clearfix w1200">
+            <ul class="img fl clearfix">
+                <li>
+                    <img src="./images/img-04.jpg" >
+                </li>
+                <li>
+                    <img src="./images/img-04.jpg" >
+                </li>
+                <li>
+                    <img src="./images/img-04.jpg" >
+                </li>
+            </ul>
+            <ul class="list fr">
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="time">
+                            <h2>26</h2>
+                            <p>2018/03</p>
+                        </div>
+                        <div class="text">
+                            <h2>重庆整车口岸进口车展示中心运营 市民买欧规规车享批你金卡是的呢加我的那我就看就看到那就看</h2>
+                            <p>今日上午，光谷创意产业基地，来自大洋彼岸的美国休斯顿技术中心中国创新中心总裁范波与武汉市的孵化器有关代表就中美孵化器相关事宜做了会谈帮你尽快不接口比较快接口比较快接口比较快你尽快帮您尽快</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="time">
+                            <h2>22</h2>
+                            <p>2018/03</p>
+                        </div>
+                        <div class="text">
+                            <h2>银行业加速松绑，西部物流园自贸区金融发展势如破竹</h2>
+                            <p> 按照《湖北省新闻出版广电2017年工作要点》部署，4月26日（今日）上午10时~11时30分在光谷创意产业大厦B座1楼会议室就武汉…</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="time">
+                            <h2>15</h2>
+                            <p>2018/03</p>
+                        </div>
+                        <div class="text">
+                            <h2>银行业加速松绑，西部物流园自贸区金融发展势如破竹</h2>
+                            <p> 按照《湖北省新闻出版广电2017年工作要点》部署，4月26日（今日）上午10时~11时30分在光谷创意产业大厦B座1楼会议室就武汉…</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="more"><a href="#">更多新闻</a></div>
+    </div>
+
+    <!-- 右侧固定分享 -->
+    <ul class="fix-nav">
+        <li>
+            <img src="./images/right-img01.png" >
+            <span>
+                <img src="./images/home1.jpg" >
+            </span>
+        </li>
+        <li>
+            <img src="./images/right-img02.png" >
+            <span>腾讯QQ</span>
+        </li>
+        <li>
+            <img src="./images/right-img03.png" >
+            <span>微信</span>
+        </li>
+        <li>
+            <img src="./images/right-img04.png" >
+            <span>新浪微博</span>
+        </li>
+        <li>
+            <img src="./images/right-img05.png" >
+            <span>返回顶部</span>
+        </li>
+    </ul>
 </div>
 <!--content结束-->
 
@@ -104,6 +247,28 @@
 <script type="text/javascript">
  //JS代码部分
  $(function(){
+     //首页banner
+    var swiper = new Swiper('.swiper-container', {
+      centeredSlides: true,
+      effect:"fade",
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    //首页新闻
+    (function(){
+        $(".news .box .img li").eq(0).show().siblings().hide();
+    }());
+    $(".news .box .list li").hover(function(){
+        var index = $(this).index();
+        $(".news .box .img li").eq(index).show().siblings().hide();
+    })
  })
 
 </script>
