@@ -18,4 +18,26 @@ $(function(){
         var index = $(this).index();
         $(".header .nav .list li").eq(index).find("a").removeClass("now");
     })
+
+
+
+    //右侧返回顶部
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 50) {
+            $('.top').fadeIn();
+        }
+        else {
+            $('.top').fadeOut();
+        }
+    });
+
+    $(".top").click(function(){
+        $("html,body").animate({scrollTop:0},500);
+    })
+
+
+    //底部返回顶部
+    $('.footer .foot-nav .box .toTop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    });
 })

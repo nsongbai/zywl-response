@@ -228,16 +228,169 @@
             <img src="./images/right-img04.png" >
             <span>新浪微博</span>
         </li>
-        <li>
+        <li class="top">
             <img src="./images/right-img05.png" >
             <span>返回顶部</span>
         </li>
     </ul>
+
+    <!-- 企业服务 -->
+    <div class="server" style="background-image:url('./images/img-15.jpg');">
+        <div class="index-title">
+            <h2><em>企业</em>服务</h2>
+            <p>service</p>
+        </div>
+
+        <ul class="list clearfix w1200">
+            <li>
+                <a href="#">
+                <h2>企业风采</h2>
+                <p>Corporate Style</p>
+                <span>more</span>
+                <div class="img">
+                    <img src="./images/img-05.png" class="one">
+                    <img src="./images/img-05d.png" class="two">
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <h2>企业专题</h2>
+                <p>Enterprise topic</p>
+                <span>more</span>
+                <div class="img">
+                    <img src="./images/img-06.png" class="one">
+                    <img src="./images/img-06d.png" class="two">
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <h2>往返线路</h2>
+                <p>Round-trip line</p>
+                <span>more</span>
+                <div class="img">
+                    <img src="./images/img-07.png" class="one">
+                    <img src="./images/img-07d.png" class="two">
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <h2>本市站点</h2>
+                <p>The site of the city</p>
+                <span>more</span>
+                <div class="img">
+                    <img src="./images/img-08.png" class="one">
+                    <img src="./images/img-08d.png" class="two">
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <h2>货号查询</h2>
+                <p>Corporate Style</p>
+                <span>more</span>
+                <div class="img">
+                    <img src="./images/img-09.png" class="one">
+                    <img src="./images/img-09d.png" class="two">
+                </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 图览园区 -->
+    <div class="park">
+        <div class="index-title">
+            <h2><em>图览</em>园区</h2>
+            <p>Park Map</p>
+        </div>
+
+        <div class="con clearfix w1200">
+            <div class="text fl">
+                <img src="./images/img-10.png" >
+            </div>
+
+            <div class="img fr clearfix">
+                <img src="./images/img-10.jpg" class="b-img fl">
+                <ul class="fr">
+                    <li class="on">
+                        <img src="./images/img-11.jpg" >
+                    </li>
+                    <li>
+                        <img src="./images/img-12.jpg" >
+                    </li>
+                    <li>
+                        <img src="./images/img-13.jpg" >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <!--content结束-->
 
 <!--footer开始-->
 <div class="footer">
+    <div class="foot-nav">
+        <div class="box w1200 clearfix">
+            <div class="contact fl clearfix">
+                <div class="tel fl">
+                    <h2>联系我们</h2>
+                    <p>湖北省武汉市东湖新技术开发区关山大道465号光谷创意产业基地</p>
+                    <div class="num">
+                        <img src="./images/img-14.png" >
+                        <span>027-87610667</span>
+                    </div>
+                </div>
+                <div class="fl ewm">
+                    <img src="./images/home1.jpg" >
+                </div>
+            </div>
+
+            <ul class="nav-list fr clearfix">
+                <li>
+                    <h2>简介规划</h2>
+                    <p><a href="#">园区介绍</a></p>
+                    <p><a href="#">领导致辞</a></p>
+                    <p><a href="#">历史足迹</a></p>
+                    <p><a href="#">图览园区</a></p>
+                </li>
+                <li>
+                    <h2>新闻专栏</h2>
+                    <p><a href="#">园区新闻</a></p>
+                    <p><a href="#">行业动态</a></p>
+                </li>
+                <li>
+                    <h2>招商投资</h2>
+                    <p><a href="#">产业体系</a></p>
+                    <p><a href="#">投资要闻</a></p>
+                    <p><a href="#">招商项目</a></p>
+                    <p><a href="#">投资服务</a></p>
+                    <p><a href="#">投资环境</a></p>
+                </li>
+                <li>
+                    <h2>企业服务</h2>
+                    <p><a href="#">企业风采</a></p>
+                    <p><a href="#">企业专题</a></p>
+                    <p><a href="#">往返线路</a></p>
+                    <p><a href="#">本市站点</a></p>
+                    <p><a href="#">货号查询</a></p>
+                </li>
+                <li>
+                    <h2>人才环境</h2>
+                    <p><a href="#">人才招聘</a></p>
+                    <p><a href="#">HRM要闻</a></p>
+                    <p><a href="#">大讲堂</a></p>
+                </li>
+            </ul>
+
+            <div class="toTop">&#923;<br />放<br />回<br />顶<br />部</div>
+        </div>
+    </div>
+
+    <div class="copyright"><span>版权所有：武汉中原物流 </span><span>鄂ICP备10207119号-1</span></div>
 </div>
 <!--footer结束-->
 
@@ -269,6 +422,14 @@
         var index = $(this).index();
         $(".news .box .img li").eq(index).show().siblings().hide();
     })
+
+
+    //园区
+    $(".park .con .img ul li").click(function(){
+        var Img = $(this).find("img").attr("src");
+        $(this).addClass("on").siblings().removeClass("on");
+        $(".park .con .img .b-img").attr("src",Img);
+    });
  })
 
 </script>

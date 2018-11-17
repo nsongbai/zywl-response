@@ -342,6 +342,9 @@
 .news {
   padding: 70px 0 60px;
 }
+.news .index-title h2 em {
+  color: #ef5000;
+}
 .news .box {
   margin-top: 32px;
 }
@@ -541,4 +544,278 @@
   display: block;
   width: 80px;
   height: 80px;
+}
+.server {
+  background-repeat: no-repeat;
+  background-color: cover;
+  padding: 60px 0 65px;
+}
+.server .index-title h2 {
+  color: #ffffff;
+}
+.server .index-title h2::after {
+  background-color: #ffffff;
+}
+.server .index-title p {
+  color: #ffffff;
+}
+.server .list {
+  margin-top: 100px;
+}
+.server .list li {
+  float: left;
+  margin-right: 18.7px;
+  width: 225px;
+  height: 230px;
+  background-color: #ffffff;
+  padding-top: 85px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+}
+.server .list li:hover {
+  background-color: #ef5000;
+}
+.server .list li:hover .img .one {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  opacity: 0;
+}
+.server .list li:hover .img .two {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  opacity: 1;
+}
+.server .list li:hover h2,
+.server .list li:hover p {
+  color: #ffffff;
+}
+.server .list li:hover span {
+  color: #ef5000;
+  border-color: #ef5000;
+}
+.server .list li:last-child {
+  margin-right: 0;
+}
+.server .list li h2 {
+  font-size: 24px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.server .list li p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.server .list li span {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 50%;
+  margin-left: -30px;
+  border: 1px solid #03b2eb;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  bottom: -12px;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: #03b2eb;
+  text-transform: uppercase;
+}
+.server .list li .img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  margin-left: -50px;
+  top: -50px;
+}
+.server .list li .img img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+}
+.server .list li .img .one {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+}
+.server .list li .img .two {
+  transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.park {
+  padding: 60px 0;
+}
+.park .index-title h2 em {
+  color: #ef5000;
+}
+.park .con {
+  margin-top: 35px;
+}
+.park .con .text {
+  width: 300px;
+}
+.park .con .text img {
+  margin-top: -36px;
+  display: block;
+  width: 100%;
+  height: 557px;
+}
+.park .con .img {
+  width: 900px;
+}
+.park .con .img .b-img {
+  width: 695px;
+  height: 520px;
+  display: block;
+}
+.park .con .img ul {
+  width: 200px;
+}
+.park .con .img ul li {
+  margin-bottom: 14px;
+  height: 165px;
+  position: relative;
+  padding-left: 2px;
+}
+.park .con .img ul li.on {
+  border-left: 2px solid #03b2eb;
+  padding-left: 0;
+}
+.park .con .img ul li.on::after {
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  content: '';
+  width: 0px;
+  height: 0px;
+  vertical-align: middle;
+  border-right: 6px solid;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  color: #03b2eb;
+}
+.park .con .img ul li:last-child {
+  margin-bottom: 0px;
+}
+.park .con .img ul li img {
+  display: block;
+  width: 200px;
+  height: 165px;
+  cursor: pointer;
+}
+/**底部样式**/
+.footer .foot-nav {
+  background-color: #393939;
+  padding: 45px 0 40px;
+}
+.footer .foot-nav .box {
+  position: relative;
+}
+.footer .foot-nav .box .contact .tel {
+  width: 280px;
+  padding: 0 35px;
+}
+.footer .foot-nav .box .contact .tel h2 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.footer .foot-nav .box .contact .tel p {
+  font-size: 14px;
+  color: #a7a7a7;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.footer .foot-nav .box .contact .tel .num span {
+  font-size: 22px;
+  color: #ef5000;
+  font-weight: bold;
+}
+.footer .foot-nav .box .contact .tel .num img {
+  vertical-align: sub;
+}
+.footer .foot-nav .box .contact .ewm img {
+  display: block;
+  width: 139px;
+  height: 139px;
+}
+.footer .foot-nav .box .nav-list li {
+  float: left;
+  margin-right: 70px;
+}
+.footer .foot-nav .box .nav-list li h2 {
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.footer .foot-nav .box .nav-list li p a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #a7a7a7;
+}
+.footer .foot-nav .box .nav-list li p a:hover {
+  font-weight: bold;
+}
+.footer .foot-nav .box .toTop {
+  position: absolute;
+  width: 25px;
+  height: 90px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #03b2eb;
+  right: 0;
+  top: 45px;
+  z-index: 2;
+  cursor: pointer;
+}
+.footer .copyright {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #2d2d2d;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer .copyright span {
+  margin-right: 45px;
+}
+.footer .copyright span:last-child {
+  margin-right: 0;
 }
