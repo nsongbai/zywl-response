@@ -18,10 +18,11 @@
 
 <!--header开始-->
 <div class="header">
-    <div class="nav w1200 clearfix">
+    <div class="nav clearfix">
         <div class="logo fl">
-            <a href="#">
-                <img src="./images/logo.png" >
+            <a href="index.html">
+                <img src="./images/logo.png" class="pc">
+                <img src="./images/logo-mo.png" class="mo">
             </a>
         </div>
         <ul class="list fr clearfix">
@@ -41,13 +42,65 @@
                 <a href="#">人才 · 环境</a>
             </li>
         </ul>
+
+        <!-- 当小于等于1024px时 -->
+        <div class="menu">
+            <img src="./images/menu_2.gif" >
+        </div>
+
+        <ul class="mo-nav">
+            <li>
+                <a href="#">简介规划</a>
+                <ul class="mo-snav">
+                    <li><a href="#">园区介绍</a></li>
+                    <li><a href="#">领导致辞</a></li>
+                    <li><a href="#">历史足迹</a></li>
+                    <li><a href="#">图览园区</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">新闻专栏</a>
+                <ul class="mo-snav">
+                    <li><a href="#">园区新闻</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">招商引资</a>
+                <ul class="mo-snav">
+                    <li><a href="#">产业体系</a></li>
+                    <li><a href="#">投资要闻</a></li>
+                    <li><a href="#">招商项目</a></li>
+                    <li><a href="#">投资服务</a></li>
+                    <li><a href="#">投资环境</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">企业服务</a>
+                <ul class="mo-snav">
+                    <li><a href="#">企业风采</a></li>
+                    <li><a href="#">企业专题</a></li>
+                    <li><a href="#">往返线路</a></li>
+                    <li><a href="#">本市站点</a></li>
+                    <li><a href="#">货号查询</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">人才环境</a>
+                <ul class="mo-snav">
+                    <li><a href="#">人才招聘</a></li>
+                    <li><a href="#">HRM要闻</a></li>
+                    <li><a href="#">大讲堂</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <!-- 二级导航 -->
     <div class="s-nav">
-        <div class="w1200 clearfix">
+        <div class="clearfix">
             <div class="goback fl">
-                <a href="#">
+                <a href="index.html">
                     <img src="./images/back-img.png" >
                     <span>返回首页</span>
                 </a>
@@ -92,7 +145,7 @@
 <div class="content">
     <!-- 首页banner -->
     <div class="index-banner">
-        <div class="swiper-container">
+        <div class="swiper-container banner-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./images/index-banner.jpg" >
@@ -154,7 +207,7 @@
             <p>news</p>
         </div>
 
-        <div class="box clearfix w1200">
+        <div class="box clearfix">
             <ul class="img fl clearfix">
                 <li>
                     <img src="./images/img-04.jpg" >
@@ -241,63 +294,78 @@
             <p>service</p>
         </div>
 
-        <ul class="list clearfix w1200">
-            <li>
-                <a href="#">
-                <h2>企业风采</h2>
-                <p>Corporate Style</p>
-                <span>more</span>
-                <div class="img">
-                    <img src="./images/img-05.png" class="one">
-                    <img src="./images/img-05d.png" class="two">
+        <div class="list clearfix">
+            <div class="swiper-container server-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <a href="#">
+                            <h2>企业风采</h2>
+                            <p>Corporate Style</p>
+                            <span>more</span>
+                            <div class="img">
+                                <img src="./images/img-05.png" class="one">
+                                <img src="./images/img-05d.png" class="two">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <a href="#">
+                            <h2>企业专题</h2>
+                            <p>Enterprise topic</p>
+                            <span>more</span>
+                            <div class="img">
+                                <img src="./images/img-06.png" class="one">
+                                <img src="./images/img-06d.png" class="two">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <a href="#">
+                            <h2>往返线路</h2>
+                            <p>Round-trip line</p>
+                            <span>more</span>
+                            <div class="img">
+                                <img src="./images/img-07.png" class="one">
+                                <img src="./images/img-07d.png" class="two">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <a href="#">
+                            <h2>本市站点</h2>
+                            <p>The site of the city</p>
+                            <span>more</span>
+                            <div class="img">
+                                <img src="./images/img-08.png" class="one">
+                                <img src="./images/img-08d.png" class="two">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <a href="#">
+                            <h2>货号查询</h2>
+                            <p>Corporate Style</p>
+                            <span>more</span>
+                            <div class="img">
+                                <img src="./images/img-09.png" class="one">
+                                <img src="./images/img-09d.png" class="two">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <h2>企业专题</h2>
-                <p>Enterprise topic</p>
-                <span>more</span>
-                <div class="img">
-                    <img src="./images/img-06.png" class="one">
-                    <img src="./images/img-06d.png" class="two">
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <h2>往返线路</h2>
-                <p>Round-trip line</p>
-                <span>more</span>
-                <div class="img">
-                    <img src="./images/img-07.png" class="one">
-                    <img src="./images/img-07d.png" class="two">
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <h2>本市站点</h2>
-                <p>The site of the city</p>
-                <span>more</span>
-                <div class="img">
-                    <img src="./images/img-08.png" class="one">
-                    <img src="./images/img-08d.png" class="two">
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <h2>货号查询</h2>
-                <p>Corporate Style</p>
-                <span>more</span>
-                <div class="img">
-                    <img src="./images/img-09.png" class="one">
-                    <img src="./images/img-09d.png" class="two">
-                </div>
-                </a>
-            </li>
-        </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
 
     <!-- 图览园区 -->
@@ -307,14 +375,13 @@
             <p>Park Map</p>
         </div>
 
-        <div class="con clearfix w1200">
-            <div class="text fl">
-                <img src="./images/img-10.png" >
-            </div>
-
-            <div class="img fr clearfix">
+        <div class="con">
+            <div class="text clearfix">
+                <img src="./images/img-10.png" class="fl bg-img">
                 <img src="./images/img-10.jpg" class="b-img fl">
-                <ul class="fr">
+            </div>
+            <div class="img">
+                <ul>
                     <li class="on">
                         <img src="./images/img-11.jpg" >
                     </li>
@@ -334,18 +401,20 @@
 <!--footer开始-->
 <div class="footer">
     <div class="foot-nav">
-        <div class="box w1200 clearfix">
+        <div class="box clearfix">
             <div class="contact fl clearfix">
-                <div class="tel fl">
-                    <h2>联系我们</h2>
-                    <p>湖北省武汉市东湖新技术开发区关山大道465号光谷创意产业基地</p>
-                    <div class="num">
-                        <img src="./images/img-14.png" >
-                        <span>027-87610667</span>
+                <div class="ewm-box clearfix">
+                    <div class="tel fl">
+                        <h2>联系我们</h2>
+                        <p>湖北省武汉市东湖新技术开发区关山大道465号光谷创意产业基地</p>
+                        <div class="num">
+                            <img src="./images/img-14.png" >
+                            <span>027-87610667</span>
+                        </div>
                     </div>
-                </div>
-                <div class="fl ewm">
-                    <img src="./images/home1.jpg" >
+                    <div class="fl ewm">
+                        <img src="./images/home1.jpg" >
+                    </div>
                 </div>
             </div>
 
@@ -386,7 +455,7 @@
                 </li>
             </ul>
 
-            <div class="toTop">&#923;<br />放<br />回<br />顶<br />部</div>
+            <div class="toTop">&#923;<br />返<br />回<br />顶<br />部</div>
         </div>
     </div>
 
@@ -400,8 +469,15 @@
 <script type="text/javascript">
  //JS代码部分
  $(function(){
+     //首页banner为整屏
+     (function(){
+        var w = document.documentElement.clientWidth || document.body.clientWidth;
+        var h = document.documentElement.clientHeight || document.body.clientHeight;
+
+        $(".index-banner .swiper-wrapper .swiper-slide img").height(h);
+     }());
      //首页banner
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.banner-swiper', {
       centeredSlides: true,
       effect:"fade",
       autoplay: {
@@ -414,6 +490,9 @@
       },
     });
 
+
+
+
     //首页新闻
     (function(){
         $(".news .box .img li").eq(0).show().siblings().hide();
@@ -425,11 +504,38 @@
 
 
     //园区
-    $(".park .con .img ul li").click(function(){
+    $(".park .con .img ul li").hover(function(){
         var Img = $(this).find("img").attr("src");
         $(this).addClass("on").siblings().removeClass("on");
-        $(".park .con .img .b-img").attr("src",Img);
+        $(".park .con .text .b-img").attr("src",Img);
     });
+
+    //企业服务
+    var swiper1 = new Swiper('.server-slide', {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: { 
+            //当宽度小于等于320
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+            },
+        //当宽度小于等于480
+            480: { 
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            //当宽度小于等于640
+            768: {
+            slidesPerView: 3,
+            spaceBetween:20
+            }
+        }
+    })
  })
 
 </script>
